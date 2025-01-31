@@ -16,6 +16,7 @@ const protectRoute = (roles: RoleType[] = [RoleEnum[2]]) => {
       });
     }
 
+    
     const token = authHeader.split(" ")[1]; // Extract the token after "Bearer"
     
     // Check if Authorization header exists and starts with "Bearer"
